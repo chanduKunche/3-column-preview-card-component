@@ -1,0 +1,119 @@
+*{
+    -webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: hsl(0, 0%, 95%);
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.container .content-box {
+    width: 33.33%;
+    padding: 40px 40px;
+    background: hsl(31, 77%, 52%);
+}
+
+.container .content-box p {
+    font-family: 'Lexend Deca';
+    margin-bottom: 100px;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2;
+}
+
+.container .content-box h1 {
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 2px;
+}
+
+.container .content-box button {
+    padding: 15px 40px;
+    border: none;
+    background: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    font-family: 'Lexend Deca';
+    border-radius: 40px;
+    cursor: pointer;
+    border: 2px solid hsl(31, 77%, 52%);
+    transition: 0.2s ease;
+}
+
+.container .content-box:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container .content-box:nth-child(2) {
+    background:  hsl(184, 100%, 22%);
+}
+
+.container .content-box:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background:  hsl(179, 100%, 13%);
+}
+
+.container .content-box:nth-child(2) button {
+    color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(184, 100%, 22%);
+}
+
+.container .content-box:nth-child(3) button {
+    color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(179, 100%, 13%);
+}
+
+.container .content-box:nth-child(1) button:hover {
+    background: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+}
+
+.container .content-box:nth-child(2) button:hover {
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+}
+
+.container .content-box:nth-child(3) button:hover {
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 377px) {
+    .container {
+        width: 320px;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    .container .content-box {
+        width: 100%;
+    }
+    .container .content-box p {
+        margin-bottom: 20px;
+    }
+    .container .content-box:nth-child(1) {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    .container .content-box:nth-child(3) {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+}
